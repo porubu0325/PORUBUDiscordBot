@@ -3,7 +3,7 @@ import os
 import traceback
 
 bot = commands.Bot(command_prefix='/')
-token = os.environ['DISCORD_BOT_TOKEN']
+token = 'DISCORD_BOT_TOKEN'
 
 
 @bot.event
@@ -46,5 +46,6 @@ async def on_message(message):
 
         for channel in global_channels:
             await channel.send(embed=embed)
+    await bot.process_commands(message)
 
 bot.run(token)
