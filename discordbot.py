@@ -8,7 +8,7 @@ import datetime
 import time
 
 #intents = discord.Intents().all()
-PREFIX='po.'
+PREFIX='pg!'
 bot = commands.Bot(command_prefix=PREFIX)
 token = 'DISCORD_BOT_TOKEN'
 
